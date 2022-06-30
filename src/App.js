@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Selector infoSelector={infoSelector} setInfoSelector={setInfoSelector}/>
-      <Content info={info}/>
+      <Content fetchError={fetchError} info={info}/>
     </div>
   );
 }
