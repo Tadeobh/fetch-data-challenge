@@ -31,8 +31,15 @@ function App() {
 
   return (
     <div className="App">
-      <Selector infoSelector={infoSelector} setInfoSelector={setInfoSelector}/>
-      <Content fetchError={fetchError} info={info}/>
+      <Selector
+        infoSelector={infoSelector}
+        setInfoSelector={setInfoSelector} 
+        className="selector"
+      />
+      <Content 
+        fetchError={fetchError} 
+        info={info}
+      />
     </div>
   );
 }
